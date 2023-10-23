@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #fffffa;
+  --color-secondary: #03440c;
+  --color-titles1: #051220;
+  --color-titles2: #5d3d2e;
+  --font-family: Helvetica;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+header {
+  color: var(--color-titles1);
+
+  background-color: var(--color-primary);
+}
+
+.about {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+.projects {
+  color: var(--color-titles1);
+  background-color: var(--color-primary);
+  display: flex;
+}
+.contacts {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
