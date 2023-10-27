@@ -1,8 +1,8 @@
 :root {
   --color-primary: #fffffa;
   --color-secondary: #03440c;
-  --color-titles1: #051220;
-  --color-titles2: #5d3d2e;
+  --color-font1: #051220;
+  --color-font2: #5d3d2e;
   --font-family: Helvetica;
 }
 
@@ -11,10 +11,11 @@
   font-family: var(--font-family);
 }
 
-header {
+.header {
   color: var(--color-titles1);
-
   background-color: var(--color-primary);
+  height: 100vh;
+  text-align: center;
 }
 
 .about {
@@ -22,10 +23,49 @@ header {
   background-color: var(--color-secondary);
 }
 .projects {
-  color: var(--color-titles1);
+  color: var(--color-font1);
   background-color: var(--color-primary);
-  display: flex;
 }
+.project-article p {
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 15px;
+  border-radius: 5px;
+  border: 2px solid var(--color-font1);
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.button-primary {
+  color: var(--color-font1);
+}
+.button-primary:hover {
+  color: var(--color-primary);
+  background-color: var(--color-font1);
+}
+.button-secondary {
+  background-color: var(--color-font1);
+  color: var(--color-primary);
+}
+.button-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-font1);
+}
+@media (min-width: 1024px) {
+  .article {
+    display: flex;
+  }
+}
+
+.project-image {
+  width: 100%;
+  max-width: 500px;
+}
+
 .contacts {
   color: var(--color-primary);
   background-color: var(--color-secondary);
