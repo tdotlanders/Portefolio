@@ -5,6 +5,12 @@
     <link rel="icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Marco Ventura</title>
   </head>
   <body>
@@ -28,6 +34,49 @@
         <blockquote>“Don't comment bad code - rewrite it.”</blockquote>
         <cite>Brian Kernighan</cite>
       </section>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">bATATAS</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">BATATAS SUCULENTAS</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                não quero batatas
+              </button>
+              <button type="button" class="btn btn-primary">BATATINHAS</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <section id="projects" class="projects">
         <h2>Projects</h2>
         <article>
@@ -37,7 +86,11 @@
             classes at EDIT. Just write down some inputs to generate a funny
             story!
           </p>
-          <a href="https://github.com/tdotlanders/Formulario">source code</a>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/tdotlanders/Formulario"
+            >source code</a
+          >
           <a href="https://tdotlanders.github.io/Formulario/">view project</a>
           <img
             width="500"
@@ -69,9 +122,8 @@
           <a href="">view project</a>
           <img src="./img/Rectangle 52.png" alt="placeholder image" />
         </article>
-        <a href="projects.html">See more projects</a>
       </section>
-
+      <a href="projects.html">See more projects</a>
       <section id="contacts" class="contacts">
         <h2>Contacts</h2>
         <p>
@@ -97,5 +149,10 @@
       </ul>
       <p>@ 2023 - Portfolio Design by Marco Ventura</p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
