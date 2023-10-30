@@ -34,7 +34,7 @@
 .button {
   display: inline-block;
   padding: 14px 15px;
-  border-radius: 5px;
+  border-radius: 60px;
   border: 2px solid var(--color-font1);
   margin-right: 5px;
   cursor: pointer;
@@ -45,6 +45,10 @@
 .button-header {
   color: var(--color-primary);
   background-color: var(--color-secondary);
+}
+.button-header:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 .button-primary {
   color: var(--color-font1);
