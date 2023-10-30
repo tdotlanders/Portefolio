@@ -16,6 +16,7 @@
   background-color: var(--color-primary);
   height: 100vh;
   text-align: center;
+  margin-top: 300px;
 }
 
 .about {
@@ -39,6 +40,11 @@
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.button-header {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 .button-primary {
   color: var(--color-font1);
