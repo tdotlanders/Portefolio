@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  padding: 14px 15px;
+  border-radius: 60px;
+  border: 2px solid $color-font1;
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button-header {
+  color: $color-primary;
+  background-color: $color-secondary;
+  &:hover {
+    color: $color-secondary;
+    background-color: $color-primary;
+  }
+}
+
+.button-primary {
+  color: $color-font1;
+  &hover {
+    color: $color-primary;
+    background-color: $color-font1;
+  }
+}
+
+.button-secondary {
+  background-color: $color-font1;
+  color: $color-primary;
+  &hover {
+    background-color: $color-primary;
+    color: $color-font1;
+  }
+}
